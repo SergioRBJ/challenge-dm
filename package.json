@@ -1,9 +1,9 @@
 {
   "scripts": {
-    "test": "cross-env NODE_ENV=test jest",
+    "test": "jest",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "format": "prettier --write \"src/**/*.ts\"",
-    "start": "cross-env NODE_ENV=dev tsnd --transpile-only --respawn --ignore-watch node_modules src/shared/http/server.ts",
+    "start": "tsnd --transpile-only --respawn --ignore-watch node_modules src/shared/http/server.ts",
     "typeorm": "tsnd ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
@@ -12,7 +12,6 @@
     "celebrate": "^13.0.3",
     "class-transformer": "^0.3.1",
     "cors": "^2.8.5",
-    "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",

@@ -2,7 +2,7 @@ export interface IRecipePuppy {
   title: string;
   version: number;
   href: string;
-  results?: (ResultsEntity)[] | null;
+  results?: ResultsEntity[] | null;
 }
 export interface ResultsEntity {
   title: string;

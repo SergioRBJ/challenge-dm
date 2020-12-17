@@ -10,13 +10,17 @@ import { errors } from 'celebrate'
 
 import AppError from '../../shared/errors/AppError';
 
+import '../../shared/container';
+
+import routes from './routes';
+
 dotenv.config();
 
 const app = express();
 
 app.use(parser.json({ type: 'application/json' }));
 app.use(cors({ credentials: true, origin: true }));
-
+app.use(routes);
 app.use(errors());
 
 app.use((err: Error, request: Request, response: Response, _: NextFunction) => {

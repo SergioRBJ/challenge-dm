@@ -1,5 +1,5 @@
 export interface IGiphy {
-  data?: (DataEntity)[] | null;
+  data: DataEntity[];
   pagination: Pagination;
   meta: Meta;
 }
