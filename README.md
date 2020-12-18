@@ -7,7 +7,7 @@ Aplicação que retorna possíveis receitas dado os ingredientes recebidos.
 ### Features
 
     * Utilização de alguns princípios de DDD, SOLID e Clean Arquitecture
-    * Criação de containers de bancos de dados com Docker.
+    * Criação de container com Docker.
     * Estilização e padronização do código com EditorConfig, TSLint e Prettier.
     * Gerenciamento de rotas com Express.
     * Testes unitários com Jest.
@@ -15,7 +15,7 @@ Aplicação que retorna possíveis receitas dado os ingredientes recebidos.
 ### Instalação de requisitos
 1. [Node](https://nodejs.org/en/download/package-manager/) &rarr; recomendo a instalação via package manager.
 2. [Yarn](https://yarnpkg.com/lang/en/)(opcional) &rarr; gerenciador de pacotes.
-3. [Docker](https://www.docker.com/get-started) &rarr; usado para a criação dos containers.
+3. [Docker + Docker Compose](https://www.docker.com/get-started) &rarr; usado para a criação do container.
 
 ### Variaveis de ambiente
 
@@ -57,6 +57,12 @@ Inicie a aplicação:
 Para executar os testes unitários execute o comando:
 ```shell
     $ yarn test
+```
+
+## Subindo a aplicação via container
+Execute o comando:
+```shell
+    $ docker-compose up
 ```
 
 ### À evoluir
