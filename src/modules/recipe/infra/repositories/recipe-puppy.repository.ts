@@ -15,7 +15,7 @@ class RecipePuppyRepository implements IRecipePuppyRepository {
     const response = await this.request.get(url);
 
     if(response.status !== 200){
-      throw new AppError('GIPHY is out of service!', 503);
+      throw new AppError('Recipe Puppy is out of service!', 503);
     }
 
     const recipes = response.data;

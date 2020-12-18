@@ -32,6 +32,9 @@ class ShowRecipesService {
     }
 
     const keywords = ingredients.split(',').sort();
+    if (keywords.length > 3){
+      throw new AppError('Put a maximum of three ingredients!');
+    }
 
     if (!recipesExternal.results) {
       throw new AppError('Error when trying to redeem gif!', 500);
